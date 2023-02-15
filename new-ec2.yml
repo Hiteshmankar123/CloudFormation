@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: EC2 Template (test-t2-unlimited-enable)
+Resources:
+  MyNewEC2Instance:
+      Type: AWS::EC2::Instance
+Properties:
+    KeyName: Mumbai_key
+    SecurityGroupIds: sg-09852fbdddcfa1ff8
+    SubnetId: subnet-05265d6e3fe1360b8
+    InstanceType: t2.large
+    ImageId: ami-0e742cca61fb65051
+    Tags:
+     key: Name
+     value: AWSinstance
